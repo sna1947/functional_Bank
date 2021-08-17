@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200 ">
+    <header>
+        <h1 class="text-7xl text-center mt-5 font-extrabold font-mono">WELLCOME TO <span
+                class="text-pink-700">OUR</span>-BANKING SERVICE</h1>
+    </header>
+    <main>
+        <section>
+            <div class="cointainer grid grid-cols-3 gap-4 w-3/4 mx-auto mt-4">
+                <!-- deposit add money section -->
+                <div class="bg-green-400 p-4 rounded">
+                    <h4 class="text-4xl text-center p-2 font-extrabold font-mono text-gray-100">Deposit</h4>
+                    <h3 class="text-7xl text-center p-2  font-mono text-gray-100">$<span id="deposit_total">000</span>
+                    </h3>
+                </div>
+                <!-- withdraw add money section -->
+                <div class="bg-red-400 p-4 rounded">
+                    <h4 class="text-4xl text-center p-2 font-extrabold font-mono text-gray-100">Withdraw</h4>
+                    <h3 class="text-7xl text-center p-2  font-mono text-gray-100">$<span id="withdraw_total">000</span>
+                    </h3>
+                </div>
+                <!-- balance money section -->
+                <div class="bg-yellow-600 p-4 rounded">
+                    <h4 class="text-4xl text-center p-2 font-extrabold font-mono text-gray-100">Balance</h4>
+                    <h3 class="text-7xl text-center p-2  font-mono text-gray-100">$ <span id="balance_total">000</span>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <!--new section ####  money deposit and withdraw section ================-->
+        <section>
+            <div class="cointainer grid grid-cols-2 gap-4 w-3/4 mx-auto mt-4">
+                <!-- money deposit  section ================-->
+                <div class="bg-yellow-200 p-4 rounded">
+                    <input id="deposit_input" class="block  text-2xl text-lg p-1 m-2 rounded w-3/4 " type="text"
+                        placeholder="Enter Your Deposit Money">
+
+                    <button id="deposit_button"
+                        class="text-2xl text-lg p-2 m-2 rounded bg-pink-400 text-green-100">Deposit</button>
+                </div>
+                <!--button sec // money input withdraw section ================-->
+                <div class="bg-red-200 p-4 rounded">
+                    <input id="withdraw_input" class="block  text-2xl text-lg p-1 m-2 rounded w-3/4" type="text"
+                        placeholder="Enter Your Withdraw Money">
+                    <button id="withdraw_button"
+                        class="text-2xl text-lg p-2 m-2 rounded bg-pink-400 text-green-100">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/banking.js"></script>
+</body>
+
+</html>
